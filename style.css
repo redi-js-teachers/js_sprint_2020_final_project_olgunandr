@@ -1,0 +1,67 @@
+body {
+    font-family: 'Jaldi';
+
+}
+header {
+    background-color: rgb(235, 243, 240, 0.637);
+    color: rgb(112, 112, 112);
+    font-size: 13px;
+    width: 100%;
+    text-align: right;
+    
+    
+}
+.header-right {
+    margin-right: 22px;
+}
+.upper_menu {
+    display: inline-block;
+    padding: 3px 10px 3px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left: 1px solid rgb(112, 112, 112);
+    height: 18px;
+
+}
+.content1 {
+    margin-top: 15px;
+    
+}
+
+.logo {
+    display: inline-block;
+    font-family: 'Meddon';
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+      
+}
+.search {
+    width: 55%;
+    display: inline-block;
+    text-align: right;
+}
+
+.search input[type=text] {
+    
+    padding: 6px;
+    border: none;
+    background-color: rgb(235, 243, 240, 0.637);
+    margin-right: 15px;
+    font-size: 13px;
+    
+  }
+
+  .navigation {
+    display: inline-block;
+    padding: 15px 45px 5px 5px;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(122, 122, 122);
+
+  }
+
+  .course {
+      display: inline-block;
+      width: 30%;
+  }
