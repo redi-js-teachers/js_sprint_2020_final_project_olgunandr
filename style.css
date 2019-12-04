@@ -55,13 +55,39 @@ header {
 
   .navigation {
     display: inline-block;
-    padding: 15px 45px 5px 5px;
+    padding: 15px 55px 5px 5px;
     font-size: 18px;
-    border-bottom: 1px solid rgb(122, 122, 122);
+    font-weight: bold;
+
+  }
+  .content2 {
+    align-content: center;
+    width: 100%;
+  }
+
+  .program-container {
+    display: inline-flex;
+    width: 90%;
+    height: ;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 50px 130px 50px 0px;
 
   }
 
   .course {
       display: inline-block;
       width: 30%;
+      flex-grow: 1;
+      flex-basis: content;
+      text-align: center;
+  }
+
+  .homepage_video {
+    margin: 50px 130px 50px 0px;
+    text-align: center;
+    
   }
