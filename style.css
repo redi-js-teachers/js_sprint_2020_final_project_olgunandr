@@ -36,6 +36,7 @@ header {
     margin: 0;
     padding: 0;
     width: 40%;
+    
       
 }
 .search {
@@ -53,14 +54,18 @@ header {
     font-size: 13px;
     
   }
-
+nav {
+    padding-bottom: 5px;
+}
   .navigation {
     display: inline-block;
     padding: 15px 55px 5px 5px;
     font-size: 18px;
+    color: rgb(112, 112, 112);
     font-weight: bold;
 
   }
+
   .content2 {
     align-content: center;
     width: 100%;
@@ -88,7 +93,7 @@ header {
   }
 
   .homepage_video {
-    margin: 50px 40px 50px 50px;
+    margin: 50px 0px 50px 0px;
     text-align: center;
     align-content: center;
     
