@@ -3,14 +3,21 @@ body {
     margin: 0;
 
 }
+a {
+    color:rgb(112, 112, 112);
+   }
+   A:visited {
+    color: rgb(112, 112, 112);
+   }
+   A:active {
+    color:rgb(82, 81, 81); 
+   }
 header {
     background-color: rgb(235, 243, 240, 0.637);
     color: rgb(112, 112, 112);
     font-size: 13px;
     width: 100%;
-    text-align: right;
-    
-    
+    text-align: right;   
 }
 .header-right {
     margin-right: 22px;
@@ -158,4 +165,16 @@ footer {
     display: inline-block;
     text-align: right;
     width: 49%;
+  }
+
+  .inner-header {
+      display: inline-block;
+      vertical-align: top;
+    padding: 0px;
+    width: 90%;
+  }
+  h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
   }
