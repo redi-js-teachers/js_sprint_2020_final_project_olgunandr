@@ -158,7 +158,7 @@ footer {
     width: 50%;
   }
   .links {
-    display: block;
+    display: inline-block;
 
   }
   .right-links {
@@ -168,13 +168,45 @@ footer {
   }
 
   .inner-header {
-      display: inline-block;
-      vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
     padding: 0px;
     width: 90%;
   }
   h2 {
-    display: inline-block;
-    text-align: center;
-    font-size: 20px;
+    font-size: 30px;
   }
+  .program {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 40%;
+    padding-top: 3%;
+    padding-left: 20px;
+  }
+  .inheader-container {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+  }
+.inheader-img {
+    display: inline-block;
+    flex-grow: 1;
+    flex-basis: content;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    
+}
+.inheader-text {
+    display: inline-block;
+    flex-grow: 1;
+    flex-basis: content;
+    text-align: left;
+    width: 100%;
+}
