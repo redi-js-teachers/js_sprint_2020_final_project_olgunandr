@@ -1,0 +1,41 @@
+h2 {
+    font-size: 30px;
+  }
+  
+.program {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 40%;
+    padding-top: 3%;
+    padding-left: 20px;
+  }
+  .inheader-container {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: left;
+    align-content: left;
+    margin: 0 -5px;
+  }
+.inheader-img {
+    display: inline-block;
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    margin: 0 5px;
+    
+}
+.inheader-text {
+    display: inline-block;
+    flex-grow: 3;
+    flex-basis: 100%;
+    text-align: left;
+    width: 100%;
+    margin: 0 5px;
+    padding-right: 100px;
+}
