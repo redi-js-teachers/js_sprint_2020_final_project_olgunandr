@@ -11,74 +11,92 @@ h2 {
     padding-left: 20px;
   }
   .inheader-container {
-    display: inline-flex;
+    display: flex;
     width: 100%;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: left;
     align-content: left;
     margin: 0 -5px;
   }
 .inheader-img {
-    display: inline-block;
     flex-grow: 1;
-    flex-basis: 100%;
-    text-align: left;
-    width: 100%;
+    flex-basis: content;
+    width: 40%;
     padding: 0;
     margin: 0 5px;
     
 }
+@media (min-width: 750px) {
+    .inheader-img {
+        width: 25%;
+    }
+}
 .inheader-text {
-    display: inline-block;
     flex-grow: 3;
-    flex-basis: 100%;
+    flex-basis: content;
     text-align: left;
-    width: 100%;
+    width: 60%;
     margin: 0 5px;
+    padding-left: 5%;
     padding-right: 100px;
     vertical-align: top;
 }
-.content-left {
-    width: 20%;
-    display: inline-block;
-    padding-left: 150px;
-    vertical-align: top;
+@media (min-width: 750px) {
+    .inheader-text {
+        width: 50%;
+    }
 }
-.content-right {
-    width: 60%;
-    display: inline-block;
-    vertical-align: top;
-    
-}
-.wrapper {
-    
-}
-.professor-container {
-    display: block;
-}
-
-.professor-item {
+.content {
     display: inline-flex;
     width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: ;  
+}
+
+
+.content-left {
+    width: 30%;
+    display: inline-block;
+    padding-left: 5%;
+    vertical-align: top;
+}
+.content-right {
+    width: 69%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.professor-container {
+    display: block;
+}
+
+.professor-item {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: ;  
     
 }
 
 .text-part {
-    width: 73%;
+    width: 70%;
     text-align: justify;
+    flex-basis: content;
     
 }
 .image-part {
-    width: 20%;
+    width: 25%;
     align-content: right;
     margin-right: 0;
     vertical-align: bottom;
     flex-grow: inherit;
-    padding-right: 20px;    
+    flex-basis: content;
+    padding-right: 2%;    
 }
