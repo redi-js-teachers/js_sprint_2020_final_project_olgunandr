@@ -1,32 +1,18 @@
 h2 {
     font-size: 30px;
   }
-  
-.program {
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
-    width: 40%;
-    padding-top: 3%;
-    padding-left: 20px;
-  }
-  .inheader-container {
+.inheader-container {
     display: flex;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: left;
-    align-content: left;
-    margin: 0 -5px;
+    
   }
 .inheader-img {
-    flex-grow: 1;
     flex-basis: content;
-    width: 40%;
-    padding: 0;
-    margin: 0 5px;
-    
+    width: 100%;
+    padding: 0; 
 }
 @media (min-width: 750px) {
     .inheader-img {
@@ -34,18 +20,16 @@ h2 {
     }
 }
 .inheader-text {
-    flex-grow: 3;
+    text-align: justify;
     flex-basis: content;
-    text-align: left;
-    width: 60%;
-    margin: 0 5px;
-    padding-left: 5%;
-    padding-right: 100px;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 10%;
     vertical-align: top;
 }
 @media (min-width: 750px) {
     .inheader-text {
-        width: 50%;
+        width: 60%;
     }
 }
 .content {
@@ -57,19 +41,23 @@ h2 {
 }
 
 .content-left {
-    flex-grow: 1;
-    flex-basis: content;
     width: 30%;
     padding-left: 5%;
     vertical-align: top;
 }
-.content-right {
-    flex-grow: 3;
-    flex-basis: content;
+@media (min-width: 750px) {
+    .content-left {
+        width: 30%;
+    }
+}
+.content-right {   
     width: 65%;
-    display: inline-block;
-    vertical-align: top;
-    
+    vertical-align: top;  
+}
+@media (min-width: 750px) {
+    .content-right {
+        width: 65%;
+    }
 }
 
 .item-container {
@@ -85,18 +73,28 @@ h2 {
 }
 
 .text-part {
-    width: 60%;
-    text-align: justify;
-    flex-basis: content;
     
+    width: 70%;
+    text-align: justify;
+    flex-basis: content;  
+}
+@media (min-width: 750px) {
+    .text-part {
+        width: 60%;
+    }
 }
 .image-part {
-    width: 35%;
+    flex-grow: inherit;
+    width: 100%;
     align-content: right;
     margin-right: 0;
     padding-top: 13%;
     vertical-align: bottom;
-    flex-grow: inherit;
     flex-basis: content;
     padding-right: 2%;    
+}
+@media (min-width: 750px) {
+    .image-part {
+        width: 35%;
+    }
 }

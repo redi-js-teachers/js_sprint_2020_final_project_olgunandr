@@ -1,7 +1,10 @@
 h2 {
     font-size: 30px;
   }
-  
+#thick {
+font-weight: bold;
+font-size: 120%;
+} 
 .program {
     display: inline-block;
     text-align: left;
@@ -53,47 +56,68 @@ h2 {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .content-left {
+    flex-grow: 1;
+    flex-basis: content;
     width: 30%;
     padding-left: 5%;
     vertical-align: top;
 }
+@media (min-width: 750px) {
+    .content-left {
+        width: 15%;
+    }
+}
 .content-right {
+    flex-grow: 3;
+    flex-basis: content;
     width: 65%;
-    vertical-align: top;
-    
+    vertical-align: top;  
+}
+@media (min-width: 750px) {
+    .content-right {
+        width: 35%;
+    }
 }
 
-.professor-container {
+.item-container {
     display: block;
 }
 
-.professor-item {
+.about-item {
     display: flex;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: ;  
-    
+    justify-content: flex-start;    
 }
 
 .text-part {
-    width: 70%;
-    text-align: justify;
-    flex-basis: content;
-    
+    flex-grow: 1;
+    width: 40%;
+    text-align: left;
+    flex-basis: content;   
+}
+@media (min-width: 750px) {
+    .text-part {
+        width: 30%;
+    }
 }
 .image-part {
-    width: 25%;
-    align-content: right;
-    padding-top: 12%;
-    margin-right: 0;
-    vertical-align: bottom;
     flex-grow: inherit;
+    width: 35%;
+    align-content: right;
+    margin-right: 0;
+    padding-top: 13%;
+    vertical-align: bottom;
     flex-basis: content;
     padding-right: 2%;    
+}
+@media (min-width: 750px) {
+    .image-part {
+        width: 35%;
+    }
 }
