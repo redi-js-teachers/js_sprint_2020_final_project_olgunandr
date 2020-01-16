@@ -3,33 +3,24 @@ h2 {
   }
 #thick {
 font-weight: bold;
-font-size: 120%;
+font-size: 110%;
 } 
-.program {
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
-    width: 40%;
-    padding-top: 3%;
-    padding-left: 20px;
-  }
-  .inheader-container {
+#footnote {
+    font-weight: lighter;
+    font-size: 80%;
+    color: rgb(112, 112, 112);
+}
+.inheader-container {
     display: flex;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: left;
-    align-content: left;
-    margin: 0 -5px;
   }
-.inheader-img {
-    flex-grow: 1;
+  .inheader-img {
     flex-basis: content;
-    width: 40%;
-    padding: 0;
-    margin: 0 5px;
-    
+    width: 100%;
+    padding: 0; 
 }
 @media (min-width: 750px) {
     .inheader-img {
@@ -37,18 +28,16 @@ font-size: 120%;
     }
 }
 .inheader-text {
-    flex-grow: 3;
+    text-align: justify;
     flex-basis: content;
-    text-align: left;
-    width: 60%;
-    margin: 0 5px;
-    padding-left: 5%;
-    padding-right: 100px;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 10%;
     vertical-align: top;
 }
 @media (min-width: 750px) {
     .inheader-text {
-        width: 50%;
+        width: 60%;
     }
 }
 .content {
@@ -60,26 +49,22 @@ font-size: 120%;
 }
 
 .content-left {
-    flex-grow: 1;
-    flex-basis: content;
     width: 30%;
     padding-left: 5%;
     vertical-align: top;
 }
 @media (min-width: 750px) {
     .content-left {
-        width: 15%;
+        width: 30%;
     }
 }
-.content-right {
-    flex-grow: 3;
-    flex-basis: content;
+.content-right {   
     width: 65%;
     vertical-align: top;  
 }
 @media (min-width: 750px) {
     .content-right {
-        width: 35%;
+        width: 65%;
     }
 }
 
@@ -92,23 +77,23 @@ font-size: 120%;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;    
+    justify-content: space-between;    
 }
 
 .text-part {
-    flex-grow: 1;
-    width: 40%;
-    text-align: left;
-    flex-basis: content;   
+    
+    width: 70%;
+    text-align: justify;
+    flex-basis: content;  
 }
 @media (min-width: 750px) {
     .text-part {
-        width: 30%;
+        width: 60%;
     }
 }
 .image-part {
     flex-grow: inherit;
-    width: 35%;
+    width: 100%;
     align-content: right;
     margin-right: 0;
     padding-top: 13%;
