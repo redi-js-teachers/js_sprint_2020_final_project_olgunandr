@@ -1,0 +1,87 @@
+h2 {
+    font-size: 30px;
+  }
+
+  .inheader-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .inheader-img {
+    flex-basis: content;
+    width: 100%;
+    padding: 0; 
+}
+@media (min-width: 750px) {
+    .inheader-img {
+        width: 25%;
+    }
+}
+.inheader-text {
+    text-align: justify;
+    flex-basis: content;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 10%;
+    vertical-align: top;
+}
+@media (min-width: 750px) {
+    .inheader-text {
+        width: 60%;
+    }
+}
+.content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (min-width: 750px) {
+    .content {
+        flex-direction: row;
+    }
+}
+
+.content-left {
+    width: 30%;
+    padding-left: 5%;
+    vertical-align: top;
+}
+.content-right {
+    width: 65%;
+    vertical-align: top;
+    
+}
+
+.professor-container {
+    display: block;
+}
+
+.professor-item {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.text-part {
+    width: 70%;
+    text-align: justify;
+    flex-basis: content;  
+}
+
+.image-part {
+    width: 25%;
+    align-content: right;
+    padding-top: 12%;
+    margin-right: 0;
+    vertical-align: bottom;
+    flex-grow: inherit;
+    flex-basis: content;
+    padding-right: 2%;    
+}

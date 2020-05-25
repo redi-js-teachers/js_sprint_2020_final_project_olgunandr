@@ -1,0 +1,106 @@
+h2 {
+  font-size: 30px;
+}
+div.contacts {
+  margin-bottom: 20px;
+}
+.form_action {
+  display: none;
+}
+.inheader-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+}
+.inheader-img {
+  flex-basis: content;
+  width: 100%;
+  padding: 0; 
+}
+@media (min-width: 750px) {
+  .inheader-img {
+      width: 25%;
+  }
+}
+.inheader-text {
+  text-align: justify;
+  flex-basis: content;
+  width: 100%;
+  padding-right: 5%;
+  padding-left: 10%;
+  vertical-align: top;
+}
+@media (min-width: 750px) {
+  .inheader-text {
+      width: 60%;
+  }
+}
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.content-left {
+  width: 30%;
+  padding-left: 5%;
+  vertical-align: top;
+}
+@media (min-width: 750px) {
+  .content-left {
+      width: 30%;
+  }
+}
+.content-right {   
+  width: 65%;
+  vertical-align: top;  
+}
+@media (min-width: 750px) {
+  .content-right {
+      width: 65%;
+  }
+}
+
+.item-container {
+  display: block;
+}
+
+.about-item {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;    
+}
+
+.text-part {
+  
+  width: 70%;
+  text-align: justify;
+  flex-basis: content;  
+}
+@media (min-width: 750px) {
+  .text-part {
+      width: 60%;
+  }
+}
+.image-part {
+  flex-grow: inherit;
+  width: 100%;
+  align-content: right;
+  margin-right: 0;
+  padding-top: 13%;
+  vertical-align: bottom;
+  flex-basis: content;
+  padding-right: 2%;    
+}
+@media (min-width: 750px) {
+  .image-part {
+      width: 35%;
+  }
+}

@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style_apply.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Meddon' rel='stylesheet'>
+    <title>Krioukov.Academy</title>
+</head>
+<body>
+    <header>
+        <div class="header-right">
+            <div class="upper_menu"><a href="about.html">ABOUT</a></div>
+            <div class="upper_menu"><a href="shop.html">BUY ONLINE</a></div>
+            <div class="upper_menu"><a href="contacts.html">CONTACT US</a></div>
+            <div class="upper_menu">DE</div>
+            <div class="upper_menu">RU</div>
+        </div>
+    </header>
+    <div class="content1">
+        <div class="logo"><a href="index.html">Krioukov Academy</a></div>
+        <div class="search">
+                <input type="text" placeholder="Search..">
+        </div>
+    </div>
+    <nav>
+        <div class="navigation"><a href="program.html">Program</a></div>
+        <div class="navigation"><a href="blog.html">Blog</a></div>
+        <div class="navigation"><a href="gallery.html">Gallery</a></div>
+        <div class="navigation"><a href="application.html">Apply</a></div>
+        <div class="navigation"><a href="professors.html">Professors</a></div>
+        <div class="navigation"><a href="shop.html">Shop</a></div>
+    </nav>
+    <hr>
+    <div class="inheader-container">
+        <div class="inheader-img"><img src="assets/blog-header.jpg" width="100%"></div>
+        <div class="inheader-text">
+                <h2>How to apply</h2>
+                <p>You can call us (we speak English, German and Russian), write us an email, simply buy in Online Shop or fill in this registration form - and we call or write you back very soon.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="content">
+            <div class="content-left"></div>
+            <div class="content-right">
+                <div class="item-container">
+                    <div class="about-item">
+                        <div class="text-part">
+                                <h1>Course application</h1>
+                                <div>
+                                    <h4>Please, select a course you are interested in:</h4>
+                                    <input type="checkbox" name="course" value="Course1">Course1<br>
+                                    <input type="checkbox" name="course" value="Course2">Course2<br>
+                                    <input type="checkbox" name="course" value="Course3">Course3<br>
+                                    <input type="checkbox" name="course" value="Course4">Course4<br>
+                                    <input type="checkbox" name="course" value="Course5">Course5<br>
+                                </div>
+                                <div>
+                                        <h4>Your approximate level in the course topic:</h4>
+                                        <input type="range" name="pounts" min="0" max="10"> </div>        
+                                <div>
+                                    <h4>How can we address you?</h4>
+                                    Name*: <input type="text" name="name" required> <br>
+                                    Surname*: <input type="text" surname="name" required>
+                                </div>
+                                <div> 
+                                    <h4>Personal information</h4>
+                                    <div>Gender:
+                                            <input type="radio" name="gender" value="male">Male
+                                            <input type="radio" name="gender" value="female">Female
+                                            <input type="radio" name="gender" value="diverse">Diverse
+                                        </div>
+                                </div>
+                                <p></p>
+                                <div>Date of birth: <input type="datetime-local" name="bdaytime"></div>        
+                                
+                                <div>
+                                    <h4>Address:</h4>
+                                    <p>House number, street: <input type="text" name="address"></p> 
+                                </div>
+                                <div>City: <input type="text" name="city"></div>
+                                <div>ZIP: <input type="text" name="zip"></div>
+                                <div>
+                                    <h4>Contacts:</h4>
+                                        Phone: <input type="text" name="phone"></div>
+                                <div class="contacts">Email*: <input type="text" name="email" required></div>
+                                <h4>Comments:</h4>
+                                <div class="contacts"><input type="text" name="comments"></div>
+                                <div class="contacts">
+                                        <input type="checkbox" name="choice" value="Data collection" checked> I agree that my personal data will be collected and stored.<br>
+                                        <input type="checkbox" name="choice" value="News">I agree to recieve news from the School of Fine Art and Design<br>
+                                    </div>
+                                <div class="contacts"><input type="submit" name="submit"></div>    
+                                    
+                                <div class="form_action">
+                                    <form action="https://httpbin.org/post" method="POST">
+                                    Course: <input type="text" name="course"><br>
+                                    Course level: <input type="range" name="pounts"><br>
+                                    Name: <input type="text" name="name"><br>
+                                    Surname: <input type="text" name="surname"><br>
+                                    Gender: <input type="text" name="gender"><br>
+                                    Date of birth: <input type="datetime-local" name="bdaytime"><br>
+                                    House number, street: <input type="text" name="address"><br>
+                                    City: <input type="text" name="city"><br>
+                                    ZIP: <input type="text" name="zip"><br>
+                                    Phone: <input type="text" name="phone"><br>
+                                    Email: <input type="text" name="email"><br>
+                                    Comments: <input type="text" name="comments"><br>
+                                    Terms: <input type="checkbox" name="choice" value="Data collection"><br>
+                                    News: <input type="checkbox" name="choice" value="News"><br>
+                                </form>
+                                </div>
+                        </div>
+                        <div class="image-part">
+                            <img src="assets/contacts-item.jpg" alt="School of Fine Arts and Design" width="100%">
+                        </div>
+                    </div>
+                
+                </div>
+</body>
