@@ -1,0 +1,69 @@
+let courses = [
+    {
+        id: 1,
+        title: 'Drawing course',
+        dates: '29.06.20 - 03.07.20',
+        time: 'Monday to Friday from 9:30 to 16:00',
+        price: 248.00,
+        currency: '€',
+        image: 'assets/program-drawing.jpg'
+    },
+    {
+        id: 2,
+        title: 'Painting masterclass: Concept and production',
+        dates: '29.06.20 - 03.07.20',
+        time: 'Monday to Friday from 9:30 to 16:00',
+        price: 348.00,
+        currency: '€',
+        image: 'assets/program-painting.jpg'
+    }];
+let shoppingCart = [];
+for (let i = 0; i <courses.length; i++) {
+    const courseListEl = document.getElementById('courseList');
+    courseListEl.innerHTML = courseListEl.innerHTML + `
+    
+    <div class="courseCard">
+        <div class="courseImage">
+            <img class="imageOfCourse" src="${courses[i].image}" alt="Image of $courses[i].title}">
+        </div>
+        <div class="courseProperties">
+            <span class="courseTitle">${courses[i].title}</span><br>
+            <b>Dates</b>: ${courses[i].dates}<br>
+            <b>Time</b>: ${courses[i].time}<br>
+            <b>Price</b>: ${courses[i].price} ${courses[i].currency}<br>
+            <p><button class="courseBtn" id="addCourseBtn${i}">Add to cart</button></p>
+        </div>
+    </div> 
+    `;
+}
+
+for (let i = 0; i <courses.length; i++) {
+    const addCourseBtn = document.getElementById('addCourseBtn' + i);
+    addCourseBtn.addEventListener("click", function () { addCourseToCart(i); });
+}
+
+function addCourseToCart(courseId) {
+    shoppingCart.push(
+        {
+            title:courses[courseId].title,
+            dates:courses[courseId].dates,
+            price:courses[courseId].price
+        });
+    showShoppingCartProducts()
+    const addCourseBtn = document.getElementById('addCourseBtn' + courseId);
+    addCourseBtn.disabled = true;        
+};
+
+function showShoppingCartProducts() {
+    let totalPrice = 0;
+    const shoppingCartEl = document.getElementById('shoppingCart');
+    shoppingCartEl.innerHTML = "";
+    for (let i = 0; i < shoppingCart.length; i++) {
+        let item = `<span>${shoppingCart[i].title} (${shoppingCart[i].dates}) - ${shoppingCart[i].price}€</span><br />`;
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = item;
+        shoppingCartEl.appendChild(wrapper);
+        totalPrice = totalPrice + shoppingCart[i].price;
+    }
+    document.getElementById('total').textContent = totalPrice.toFixed(2) + '€';
+}
