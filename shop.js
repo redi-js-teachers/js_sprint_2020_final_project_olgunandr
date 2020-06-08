@@ -1,6 +1,5 @@
 let courses = [
     {
-        id: 1,
         title: 'Drawing course',
         dates: '29.06.20 - 03.07.20',
         time: 'Monday to Friday from 9:30 to 16:00',
@@ -9,20 +8,51 @@ let courses = [
         image: 'assets/program-drawing.jpg'
     },
     {
-        id: 2,
         title: 'Painting masterclass: Concept and production',
         dates: '29.06.20 - 03.07.20',
         time: 'Monday to Friday from 9:30 to 16:00',
         price: 348.00,
         currency: '€',
         image: 'assets/program-painting.jpg'
+    },
+    {
+        title: 'COPIC-, Manga-Workshop',
+        dates: '29.06.20 - 03.07.20',
+        time: 'Monday to Friday from 9:30 to 12:30 or from 12:30 to 16:00',
+        price: 168.00,
+        currency: '€',
+        image: 'assets/manga-comic.jpg'
+    },
+    {
+        title: 'Painting course',
+        dates: '06.07.20 - 10.07.20',
+        time: 'Monday to Friday from 9:30 to 16:00',
+        price: 248.00,
+        currency: '€',
+        image: 'assets/program-painting2.jpg'
+    },
+    {
+        title: 'Oil painting masterlass',
+        dates: '06.07.20 - 10.07.20',
+        time: 'Monday to Friday from 9:30 to 16:00',
+        price: 348.00,
+        currency: '€',
+        image: 'assets/program-painting.jpg'
+    },
+    {
+        title: 'COPIC-, Manga-Workshop',
+        dates: '06.07.20 - 10.07.20',
+        time: 'Monday to Friday from 9:30 to 12:30 or from 12:30 to 16:00',
+        price: 168.00,
+        currency: '€',
+        image: 'assets/manga-comic2.jpg'
     }];
 let shoppingCart = [];
-for (let i = 0; i <courses.length; i++) {
+for (let i = 0; i < courses.length; i++) {
     const courseListEl = document.getElementById('courseList');
     courseListEl.innerHTML = courseListEl.innerHTML + `
-    
-    <div class="courseCard">
+     
+    <div class="courseCard" id="${i}">
         <div class="courseImage">
             <img class="imageOfCourse" src="${courses[i].image}" alt="Image of $courses[i].title}">
         </div>
@@ -37,7 +67,7 @@ for (let i = 0; i <courses.length; i++) {
     `;
 }
 
-for (let i = 0; i <courses.length; i++) {
+for (let i = 0; i < courses.length; i++) {
     const addCourseBtn = document.getElementById('addCourseBtn' + i);
     addCourseBtn.addEventListener("click", function () { addCourseToCart(i); });
 }
@@ -45,13 +75,13 @@ for (let i = 0; i <courses.length; i++) {
 function addCourseToCart(courseId) {
     shoppingCart.push(
         {
-            title:courses[courseId].title,
-            dates:courses[courseId].dates,
-            price:courses[courseId].price
+            title: courses[courseId].title,
+            dates: courses[courseId].dates,
+            price: courses[courseId].price
         });
     showShoppingCartProducts()
     const addCourseBtn = document.getElementById('addCourseBtn' + courseId);
-    addCourseBtn.disabled = true;        
+    addCourseBtn.disabled = true;
 };
 
 function showShoppingCartProducts() {

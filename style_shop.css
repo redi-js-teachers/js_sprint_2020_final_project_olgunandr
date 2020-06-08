@@ -1,0 +1,110 @@
+h2 {
+  font-size: 30px;
+}
+#thick {
+font-weight: bold;
+font-size: 110%;
+} 
+#footnote {
+  font-weight: lighter;
+  font-size: 80%;
+  color: rgb(112, 112, 112);
+}
+.inheader-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.inheader-img {
+  flex-basis: content;
+  width: 100%;
+  padding: 0; 
+}
+@media (min-width: 750px) {
+  .inheader-img {
+      width: 25%;
+  }
+}
+.inheader-text {
+  text-align: justify;
+  flex-basis: content;
+  width: 100%;
+  padding-right: 5%;
+  padding-left: 10%;
+  vertical-align: top;
+}
+@media (min-width: 750px) {
+  .inheader-text {
+      width: 60%;
+  }
+}
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.content-left {
+  width: 60%;
+  padding-left: 5%;
+  vertical-align: top;
+}
+@media (min-width: 750px) {
+  .content-left {
+      width: 60%;
+  }
+}
+.courseCard {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0px 30px 50px 10px;
+}
+@media (min-width: 750px) {
+  .courseCard {
+      width: 100%;
+  }
+}
+.courseImage {
+  padding-left: 3%;
+  padding-top: 1%;
+}
+.imageOfCourse {
+  width: 230px;
+}
+.courseTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+.courseBtn {
+  font-size: 100%;
+  border-radius: 5px;
+  padding: 3px 20px;
+  background-color: rgb(233, 233, 233);
+  font-family: 'Jaldi';
+}
+.courseProperties {
+  padding-left: 60px;
+}
+
+.content-right {   
+  width: 35%;
+  vertical-align: top;  
+}
+@media (min-width: 750px) {
+  .content-right {
+      width: 35%;
+  }
+}
+.shoppingCartTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
