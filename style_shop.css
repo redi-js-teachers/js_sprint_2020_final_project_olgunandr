@@ -1,15 +1,6 @@
 h2 {
   font-size: 30px;
-}
-#thick {
-font-weight: bold;
-font-size: 110%;
 } 
-#footnote {
-  font-weight: lighter;
-  font-size: 80%;
-  color: rgb(112, 112, 112);
-}
 .inheader-container {
   display: flex;
   width: 100%;

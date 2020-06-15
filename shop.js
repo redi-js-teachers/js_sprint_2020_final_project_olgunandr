@@ -1,4 +1,4 @@
-let courses = [
+const courses = [
     {
         title: 'Drawing course',
         dates: '29.06.20 - 03.07.20',
@@ -50,8 +50,7 @@ let courses = [
 let shoppingCart = [];
 for (let i = 0; i < courses.length; i++) {
     const courseListEl = document.getElementById('courseList');
-    courseListEl.innerHTML = courseListEl.innerHTML + `
-     
+    courseListEl.innerHTML = courseListEl.innerHTML + ` 
     <div class="courseCard" id="${i}">
         <div class="courseImage">
             <img class="imageOfCourse" src="${courses[i].image}" alt="Image of $courses[i].title}">
