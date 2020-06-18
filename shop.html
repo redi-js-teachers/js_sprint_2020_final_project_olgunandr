@@ -1,14 +1,17 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="style_program.css" type="text/css">
+    <link rel="stylesheet" href="style_shop.css" type="text/css">
+
     <link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Meddon' rel='stylesheet'>
     <title>Krioukov.Academy</title>
 </head>
+
 <body>
     <header>
         <div class="header-right">
@@ -20,9 +23,9 @@
         </div>
     </header>
     <div class="content1">
-            <div class="logo"><a href="index.html">Krioukov Academy</a></div>
+        <div class="logo"><a href="index.html">Krioukov Academy</a></div>
         <div class="search">
-                <input type="text" placeholder="Search..">
+            <input type="text" placeholder="Search..">
         </div>
     </div>
     <nav>
@@ -37,9 +40,22 @@
     <div class="inheader-container">
         <div class="inheader-img"><img src="assets/program-header.jpg" width="70%"></div>
         <div class="inheader-text">
-                <h2>Shop</h2>
-                <p>You can buy our products online.</p>
+            <h2>Online shop</h2>
+            <p>Plan your creativity development in advance: <br> Select and buy our courses online.</p>
         </div>
     </div>
     <hr>
+    <div class="content">
+        <div class="content-left">
+            <div id="courseList"></div>
+        </div>
+        <div class="content-right">
+            <div class="shoppingCartTitle">Courses added to the cart</div>
+            <div id="shoppingCart">
+            </div>
+            <h3>Total Price: <span id="total"></span></h3>
+            <p><button class="courseBtn" id="getInvoiceBtn">Get invoice</button></p>
+        </div>
+    </div>
+    <script src="shop.js"></script>
 </body>
