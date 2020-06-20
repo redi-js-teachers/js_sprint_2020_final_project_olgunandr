@@ -70,6 +70,8 @@ for (let i = 0; i < courses.length; i++) {
     const addCourseBtn = document.getElementById('addCourseBtn' + i);
     addCourseBtn.addEventListener("click", function () { addCourseToCart(i); });
 }
+const getInvoiceBtn = document.getElementById('getInvoiceBtn');
+getInvoiceBtn.addEventListener("click", getInvoice );
 
 function addCourseToCart(courseId) {
     shoppingCart.push(
@@ -95,4 +97,27 @@ function showShoppingCartProducts() {
         totalPrice = totalPrice + shoppingCart[i].price;
     }
     document.getElementById('total').textContent = totalPrice.toFixed(2) + '€';
+};
+
+function getInvoice() {
+    const email = document.getElementById('emailInputField').value;
+
+    let body = 'Thank you very much for your registration at Krioukov Academy.<br>Here are the courses you are interested in: <ul>'
+    for (let i = 0; i < shoppingCart.length; i++) {
+        body = body + `<li>${shoppingCart[i].title} (${shoppingCart[i].dates}) - ${shoppingCart[i].price}€</li>`;
+    }
+
+    body = body + '</ul><br>We will contact you soon to clarify the last details. <br>Best regards, SBKG'
+    
+    Email.send({
+        SecureToken : "16f7332e-9824-4cbd-b4f0-7b9904b66af6",
+        To : email,
+        From : "olga.andreyevskikh@gmail.com",
+        Subject : "Your registration at Krioukov Academy",
+        Body : body
+    }).then(
+      message => alert(message)
+    );
 }
+
+

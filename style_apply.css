@@ -104,3 +104,10 @@ div.contacts {
       width: 35%;
   }
 }
+.courseBtn {
+  font-size: 100%;
+  border-radius: 5px;
+  padding: 3px 20px;
+  background-color: rgb(233, 233, 233);
+  font-family: 'Jaldi';
+}
