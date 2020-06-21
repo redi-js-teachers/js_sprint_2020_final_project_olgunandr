@@ -33,7 +33,7 @@ function sendApplication() {
     body = body + '</ul>'
                
     Email.send({
-        SecureToken : "16f7332e-9824-4cbd-b4f0-7b9904b66af6",
+        SecureToken : "put-secure-token-here",
         To : "olga.andreyevskikh@gmail.com",
         From : "olga.andreyevskikh@gmail.com",
         Subject : "New registration at Krioukov Academy",
