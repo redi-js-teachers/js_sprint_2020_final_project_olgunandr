@@ -110,7 +110,7 @@ function getInvoice() {
     body = body + '</ul><br>We will contact you soon to clarify the last details. <br>Best regards, SBKG'
     
     Email.send({
-        SecureToken : "16f7332e-9824-4cbd-b4f0-7b9904b66af6",
+        SecureToken : "put-secure-token-here",
         To : email,
         From : "olga.andreyevskikh@gmail.com",
         Subject : "Your registration at Krioukov Academy",
