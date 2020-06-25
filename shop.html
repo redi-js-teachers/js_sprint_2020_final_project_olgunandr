@@ -54,8 +54,19 @@
             <div id="shoppingCart">
             </div>
             <h3>Total Price: <span id="total"></span></h3>
+
+            <h4>Comments:</h4>
+            <div class="contacts"><input type="text" name="comments"></div>
+            <div class="contacts">Email*: <input type="text" name="email"  id="emailInputField" required></div>
             <p><button class="courseBtn" id="getInvoiceBtn">Get invoice</button></p>
+            <div class="form_action">
+                <form action="https://httpbin.org/post" method="POST">
+                    Email: <input type="text" name="email"><br>
+                    Comments: <input type="text" name="comments"><br>
+                </form>
+            </div>
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="shop.js"></script>
 </body>

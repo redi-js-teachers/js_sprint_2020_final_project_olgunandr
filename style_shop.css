@@ -99,3 +99,9 @@ h2 {
   font-size: 20px;
   font-weight: bold;
 }
+div.contacts {
+  margin-bottom: 20px;
+}
+.form_action {
+  display: none;
+}
